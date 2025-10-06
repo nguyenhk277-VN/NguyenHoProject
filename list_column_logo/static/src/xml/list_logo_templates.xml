@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <!-- Inherit ListRenderer: add a logo holder before the column title; JS fills it -->
+    <t t-inherit="web.ListRenderer" t-inherit-mode="extension">
+        <xpath expr="//span[@t-esc='column.label']" position="replace">
+            <t t-if="column.logo">
+                <img class="o_list_column_logo o_avatar o_m2o_avatar"
+                     t-att-src="'data:image/png;base64,' + column.logo"
+                     loading="lazy"/>
+            </t>
+            <t t-else="">
+                <t/>
+            </t>
+            <div class="o_column_title">
+                <t t-esc="column.string"/>
+            </div>
+        </xpath>
+    </t>
+</templates>

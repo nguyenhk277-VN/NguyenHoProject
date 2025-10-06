@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>List Column Logo</title>
+</head>
+
+<body class="container py-4">
+    <div class="mb-4">
+        <h1 class="h3">List Column Logo</h1>
+        <p class="text-muted mb-0">Odoo 18.0 – Backend UX Enhancement</p>
+    </div>
+
+    <section class="mb-4">
+        <h2 class="h4">Overview</h2>
+        <p>
+            This module adds configurable logos to list view column headers. Administrators can
+            attach a logo to any field via <em>Settings → Technical → Database Structure → Fields</em> and
+            the icon will automatically render in the corresponding list column header across the app.
+        </p>
+    </section>
+
+    <section class="mb-4">
+        <h2 class="h4">Key Features</h2>
+        <ul class="mb-0">
+            <li>Per-field logo stored on a dedicated model with one-to-one linkage</li>
+            <li>Seamless header rendering by inheriting the native list renderer template</li>
+            <li>Optimized image delivery through <code>/web/image</code> URLs with cache busting</li>
+            <li>Responsive sizing aligned with Odoo avatar styles (<code>o_avatar</code>, <code>o_m2o_avatar</code>)
+            </li>
+            <li>“Add a Logo” button on field form to open/create the related logo</li>
+            <li>No changes required to existing list views</li>
+        </ul>
+    </section>
+
+    <section class="mb-4">
+        <h2 class="h4">How It Works</h2>
+        <ol>
+            <li>Go to <strong>Settings → Technical → Database Structure → Fields</strong>.</li>
+            <li>Open a field record and click <strong>Add a Logo</strong> in the header.</li>
+            <li>Upload an image (the module stores optimized sizes automatically).</li>
+            <li>Open any list view containing that field; the logo appears in the column header.</li>
+        </ol>
+    </section>
+
+    <section class="mb-4">
+        <h2 class="h4">Compatibility</h2>
+        <p>Tested on Odoo 18.0 Community/Enterprise with web backend.</p>
+    </section>
+
+    <section class="mb-4">
+        <h2 class="h4">Installation</h2>
+        <ol>
+            <li>Copy the module directory to your addons path.</li>
+            <li>Update Apps list and install <strong>List Column Logo</strong>.</li>
+            <li>Hard refresh the backend to reload assets.</li>
+        </ol>
+    </section>
+
+    <section class="mb-4">
+        <h2 class="h4">Support</h2>
+        <p>If you need assistance, please contact the vendor via the Odoo Apps store messaging or your usual support
+            channel.</p>
+    </section>
+</body>
+
+</html>
