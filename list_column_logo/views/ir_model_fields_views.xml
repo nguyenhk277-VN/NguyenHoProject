@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ir_model_fields_form_inherit_column_logo" model="ir.ui.view">
+        <field name="name">ir.model.fields.form.inherit.column.logo</field>
+        <field name="model">ir.model.fields</field>
+        <field name="inherit_id" ref="base.view_model_fields_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button type="object"
+                            name="action_open_or_create_logo"
+                            string="Add a Logo"
+                            class="btn-primary"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

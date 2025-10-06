@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ir_model_field_logo_tree" model="ir.ui.view">
+        <field name="name">ir.model.field.logo.tree</field>
+        <field name="model">ir.model.field.logo</field>
+        <field name="arch" type="xml">
+            <list string="Field Logos">
+                <field name="field_id"/>
+                <field name="image_1920" widget="image" class="oe_avatar"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ir_model_field_logo_form" model="ir.ui.view">
+        <field name="name">ir.model.field.logo.form</field>
+        <field name="model">ir.model.field.logo</field>
+        <field name="arch" type="xml">
+            <form string="Field Logo">
+                <sheet>
+                    <group>
+                        <field name="field_id"/>
+                        <field name="image_1920" widget="image" class="oe_avatar"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
